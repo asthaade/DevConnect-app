@@ -93,10 +93,10 @@ Fork the Project
 For questions, feedback, or collaboration, feel free to reach out:
 
 **Astha Ade**  
-🔗 [GitHub Profile](https://github.com/asthaade)
+🔗 [GitHub](https://github.com/asthaade)
 
 **🔗 Live App:**  
-🌐 [DevConnect – Live Demo]([https://your-live-app-url.com](https://devconnect-app-qqe2.onrender.com))
+🌐 [DevConnect – Live Demo](https://devconnect-app-qqe2.onrender.com))
 
 **📁 Project Repository:**  
 🔗 [DevConnect on GitHub](https://github.com/asthaade/DevConnect-app)
