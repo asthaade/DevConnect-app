@@ -7,7 +7,7 @@ With a sleek UI built using **Tailwind CSS** and **DaisyUI**, DevConnect deliver
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🔐 **User Authentication** – Secure login/register using JWT
 - 🤝 **Send & Accept Connection Requests** – Build your developer network
@@ -18,7 +18,7 @@ With a sleek UI built using **Tailwind CSS** and **DaisyUI**, DevConnect deliver
 
 ---
 
-## 🧑‍💻 Tech Stack
+## Tech Stack
 
 | Layer             | Tech Stack                             |
 |------------------|----------------------------------------|
@@ -29,11 +29,12 @@ With a sleek UI built using **Tailwind CSS** and **DaisyUI**, DevConnect deliver
 | **Real-Time Chat**| Socket.IO                              |
 | **Deployment**    | Render                                 |
 
+
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
-### 📦 Prerequisites
+### Prerequisites
 
 - Node.js (v18 or higher)
 - MongoDB Atlas account (or local MongoDB)
@@ -41,7 +42,7 @@ With a sleek UI built using **Tailwind CSS** and **DaisyUI**, DevConnect deliver
 
 ---
 
-### 📁 Installation
+###  Installation
 
 ```bash
 # 1. Clone the repository
@@ -55,5 +56,51 @@ cd backend
 npm install
 
 # 4. Install frontend dependencies
-cd ../frontend
+cd frontend
 npm install
+
+# 5. If you don't want to change the.env credentials skip this step and move to next step.
+
+# 6. Set up environment variables:
+-Create a config.env file after creating a config folder in the backend directory, containing the following variables:
+
+PORT =
+DB_Connection_String =
+JWT_SECRET = 
+FRONTEND_URL= 
+BACKEND_URL=
+
+```
+
+---
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create.  
+Any contributions you make to **DevConnect** are greatly appreciated!
+Fork the Project
+1. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+2. Commit your Changes (git commit -m 'Add some AmazingFeature')
+3. Push to the Branch (git push origin feature/AmazingFeature)
+4. Open a Pull Request.
+
+## Please give a star ⭐ to the repository if you like it.
+
+---
+
+## 📬 Contact
+
+For questions, feedback, or collaboration, feel free to reach out:
+
+**Astha Ade**  
+🔗 [GitHub Profile](https://github.com/asthaade)
+
+**🔗 Live App:**  
+🌐 [DevConnect – Live Demo]([https://your-live-app-url.com](https://devconnect-app-qqe2.onrender.com))
+
+**📁 Project Repository:**  
+🔗 [DevConnect on GitHub](https://github.com/asthaade/DevConnect-app)
+
+
+
+
