@@ -26,7 +26,7 @@ With a sleek UI built using **Tailwind CSS** and **DaisyUI**, DevConnect creates
 | **Database**  | MongoDB Atlas                      |
 | **Authentication** | JWT, Bcrypt                   |
 | **Real-Time Chat** | Socket.IO                     |
-| **Deployment**| Frontend: Vercel *(optional)*, Backend: Render *(optional)* |
+| **Deployment**|  Render  |
 
 ---
 
@@ -42,40 +42,66 @@ With a sleek UI built using **Tailwind CSS** and **DaisyUI**, DevConnect creates
 
 ### 📁 Installation
 
-```bash
 # Clone the repository
+
+```bash
 git clone https://github.com/yourusername/DevConnect.git
+```
 
 # Navigate to project
-cd DevConnect-app
 
-# Install backend dependencies
+```bash
+cd DevConnect-app
+```
+
+1. Install backend dependencies
+```bash
 cd backend
 npm install
+```
 
-# Install frontend dependencies
-cd ../frontend
+2. Install frontend dependencies  
+```bash
+cd frontend 
 npm install
+```
+##3. If you don’t want to change the `.env` credentials, skip this step and move to next step##
 
----
+4.Set up environment variables:
+Create a config.env file after creating a config folder in the backend directory, containing the following variables:
 
-### 🔐 Set Up Environment Variables
-
-If you don’t want to change the `.env` credentials, skip this step and move to next step
-
-### 📄 Create a `.env` File
-
-Inside the `/backend` directory, create a `.env` file with the following environment variables:
-
-PORT = 7777
+```bash
+PORT = 
 DB_Connection_String = 
 FRONTEND_URL= 
 BACKEND_URL=
+```
 
 Replace each value with your specific configuration details.
 
-### Run the application backend (make sure you are in /backend directory) :
+5. Run the application backend (make sure you are in /backend directory) :
+```bash
 npm run dev
+```
 
-###Open your browser and navigate to http://localhost:5173 to view the app.
+6. Run the application frontend (make sure you are in /frontend directory) :
+```bash
 npm run dev
+```
+7. Open your browser and navigate to http://localhost:5173 to view the app.
+
+---
+
+## 🌟 Support
+
+If you like this project, **please give a star ⭐ to the repository** — it helps others discover it and motivates continued development!
+
+---
+
+## 📬 Contact
+
+**Astha Ade** – [GitHub Profile](https://github.com/asthaade)
+
+**Project Repository:** [DevConnect on GitHub](https://github.com/asthaade/DevConnect)
+
+
