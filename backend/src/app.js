@@ -17,6 +17,7 @@ const chatRouter = require('./routes/chat.js');
 const corsOptions = {
     origin: process.env.FRONTEND_URL,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+    allowHeaders:['Content-Type','Authorization'],
     credentials: true
     };
     
