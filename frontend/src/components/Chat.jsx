@@ -167,7 +167,7 @@ const Chat = () => {
           <input
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
-            className="flex-1 border border-gray-400 rounded-full px-5 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-white text-base"
+            className="flex-1 border border-gray-400 rounded-full px-5 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-white text-base text-gray-800 bg-white"
             placeholder="Type a message..."
           />
           <button
