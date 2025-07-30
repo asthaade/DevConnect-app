@@ -118,7 +118,7 @@ const Login = () => {
               value={formData.firstName}
               onChange={handleChange}
               placeholder="First Name"
-              className="px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400"
+              className="px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800 bg-white "
             />
             <input
               type="text"
@@ -126,7 +126,7 @@ const Login = () => {
               value={formData.lastName}
               onChange={handleChange}
               placeholder="Last Name"
-              className="px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400"
+              className="px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800 bg-white "
             />
           </div>
         )}
@@ -138,7 +138,7 @@ const Login = () => {
           value={formData.emailId}
           onChange={handleChange}
           placeholder="Email"
-          className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400"
+          className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800 bg-white "
         />
 
         {/* Password Field */}
@@ -148,7 +148,7 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
           placeholder="Password"
-          className="w-full mb-6 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400"
+          className="w-full mb-6 px-4 py-2 border border-gray-300 rounded-lg text-sm outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800 bg-white"
         />
 
         {/* Submit Button */}
