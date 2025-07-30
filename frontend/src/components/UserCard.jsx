@@ -32,14 +32,17 @@ const UserCard = ({ user }) => {
 
   return (
     <div className="min-h-[calc(100vh-8rem)] flex justify-center items-center px-4 py-8">
-      <div ref={cardRef} className="card  w-96 shadow bg-white/60 backdrop-blur hover:shadow-xl">
+      <div
+        ref={cardRef}
+        className="card w-96 shadow bg-white/60 backdrop-blur hover:shadow-xl text-gray-900 dark:text-gray-900"
+      >
         <figure>
           <img src={photoUrl} alt="photo" />
         </figure>
         <div className="card-body">
           <h2>{firstName + ' ' + lastName}</h2>
-          {age && gender && <p>{age + ', ' + gender}</p>}
-          <p>{about}</p>
+          {age && gender && <p className="text-gray-700 dark:text-gray-900">{age + ', ' + gender}</p>}
+          <p className="text-gray-700 dark:text-gray-900">{about}</p>
           <div className="card-actions justify-center my-4">
             <button
               className="btn btn-primary"
