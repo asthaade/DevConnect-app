@@ -4,7 +4,6 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../utils/constants";
 import { addUser } from "../utils/userSlice";
 
 const Login = () => {
@@ -42,7 +41,7 @@ const Login = () => {
     setError("");
     try {
       const res = await axios.post(
-        `${BASE_URL}/login`,
+        `${import.meta.env.VITE_BACKEND_URL}/login`,
         { emailId: formData.emailId, password: formData.password },
         { withCredentials: true }
       );
@@ -60,7 +59,7 @@ const Login = () => {
     setError("");
     try {
       const res = await axios.post(
-        `${BASE_URL}/signup`,
+        `${import.meta.env.VITE_BACKEND_URL}/signup`,
         {
           firstName: formData.firstName,
           lastName: formData.lastName,

@@ -2,7 +2,6 @@ import axios from 'axios';
 import gsap from 'gsap';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { BASE_URL } from '../utils/constants';
 import { addUser } from '../utils/userSlice';
 import UserCard from './UserCard';
 
@@ -32,7 +31,7 @@ const EditProfile = ({ user }) => {
     setError('');
     try {
       const res = await axios.patch(
-        `${BASE_URL}/profile/edit`,
+        `${import.meta.env.VITE_BACKEND_URL}/profile/edit`,
         form,
         { withCredentials: true }
       );

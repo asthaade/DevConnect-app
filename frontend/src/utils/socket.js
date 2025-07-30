@@ -1,9 +1,8 @@
 import { io } from "socket.io-client";
-import { BASE_URL } from './constants';
 
 export const socketConnection = () => {
-  return io(BASE_URL, {
-     transports: ["websocket"],
+  return io(import.meta.env.VITE_BACKEND_URL, {
+    transports: ["websocket"],
     withCredentials: true,
   });
 };

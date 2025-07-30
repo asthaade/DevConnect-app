@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addConnection } from '../utils/connectionSlice';
-import { BASE_URL } from '../utils/constants';
 
 const Connections = () => {
   const dispatch = useDispatch();
@@ -15,7 +14,7 @@ const Connections = () => {
   const fetchConnections = async () => {
     try {
       setIsLoading(true);
-      const res = await axios.get(`${BASE_URL}/user/connections`, {
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/user/connections`, {
         withCredentials: true,
       });
       dispatch(addConnection(res.data.data));

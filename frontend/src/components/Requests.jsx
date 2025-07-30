@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { FaCheck, FaSpinner, FaTimes, FaUserClock } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { BASE_URL } from '../utils/constants';
 import { addRequests, removeRequest } from '../utils/requestSlice';
 
 const Requests = () => {
@@ -17,7 +16,7 @@ const Requests = () => {
     try {
       setProcessing((prev) => ({ ...prev, [requestId]: true }));
       await axios.post(
-        `${BASE_URL}/request/review/${status}/${requestId}`,
+        `${import.meta.env.VITE_BACKEND_URL}/request/review/${status}/${requestId}`,
         {},
         { withCredentials: true }
       );
@@ -33,7 +32,7 @@ const Requests = () => {
   const fetchRequests = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`${BASE_URL}/user/requests/received`, {
+      const res = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/user/requests/received`, {
         withCredentials: true,
       });
       dispatch(addRequests(res.data.data));

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { BASE_URL } from "../utils/constants";
 import { socketConnection } from "../utils/socket";
 
 const Chat = () => {
@@ -18,7 +17,7 @@ const Chat = () => {
 
 
   const fetchChatMessages = async () => {
-    const chat = await axios.get(BASE_URL + "/chat/" + targetUserId, {
+    const chat = await axios.get(import.meta.env.VITE_BACKEND_URL + "/chat/" + targetUserId, {
       withCredentials: true,
     });
 

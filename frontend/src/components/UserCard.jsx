@@ -2,7 +2,6 @@ import axios from 'axios';
 import gsap from 'gsap';
 import { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { BASE_URL } from '../utils/constants';
 import { removeUserFromFeed } from '../utils/feedSlice';
 
 const UserCard = ({ user }) => {
@@ -13,7 +12,7 @@ const UserCard = ({ user }) => {
   const handleSendRequest = async (status, user_id) => {
     try {
       await axios.post(
-        BASE_URL + '/request/send/' + status + '/' + user_id,
+        import.meta.env.VITE_BACKEND_URL + '/request/send/' + status + '/' + user_id,
         {},
         { withCredentials: true }
       );
