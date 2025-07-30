@@ -65,7 +65,8 @@ const EditProfile = ({ user }) => {
                 name={field}
                 value={form[field]}
                 onChange={handleChange}
-                className="input input-bordered w-full"
+                className="w-full px-3 py-2 rounded-md bg-white text-gray-900 placeholder-gray-500 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+
               />
             </div>
           ))}
@@ -76,7 +77,8 @@ const EditProfile = ({ user }) => {
               name="gender"
               value={form.gender}
               onChange={handleChange}
-              className="select select-bordered w-full"
+              className="w-full px-3 py-2 rounded-md bg-white text-gray-900 placeholder-gray-500 border border-gray-300 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+
             >
               <option disabled value="">Choose</option>
               <option value="male">Male</option>
